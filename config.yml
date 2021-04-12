@@ -1,0 +1,16 @@
+title: Aku mencintaimu orang yg tidak mencintai ku
+description: I love Mariaemelia sinambela
+template:
+  repo: aku-mencintaimu-orang-yg-tidak-mencintai-ku-template
+  name: aku-mencintaimu-orang-yg-tidak-mencintai-ku
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
